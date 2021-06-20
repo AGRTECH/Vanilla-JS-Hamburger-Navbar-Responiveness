@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, blue, white);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 2px 3px 10px 1px black;
+  padding: 25px 15px 25px 15px;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.logo {
+  font-size: 25px;
+  text-align: center;
+}
+
+.logo span {
+  color: blue;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.socials ul {
+  display: flex;
+}
+
+.socials ul li {
+  margin-right: 10px;
+}
+
+.container ul li:hover {
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbartwo {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .socials {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 6px;
+  }
+
+  .fas.fa-bars {
+    color: blue;
+    transition: 0.5s;
+  }
+
+  .fas.fa-bars:hover {
+    transform: rotate(90deg);
+  }
+
+  .navbartwo {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom: 2px solid black;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navbar-toggle ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-left: 20px;
+    list-style: none;
+  }
+
+  .navbar-toggle ul li a {
+    text-decoration: none;
+    color: black;
+  }
+}
